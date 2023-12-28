@@ -1,0 +1,37 @@
+.first{
+  height: 430px;
+  width: 100%;
+  /*background: #AFEEEE;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second{
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 99, 71);
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  transform:
+    perspective(800px)
+    rotateY(25deg) scale(0.9)
+    rotateX(10deg);
+  filter: blur(2px);
+  opacity: 0.5;
+  transition: 0.6s ease all;
+}
+  .second:hover {
+    transform:
+      perspective(800px)
+      rotateY(-15deg)
+      translateY(-50px)
+      rotateX(10deg)
+      scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+
+
+
